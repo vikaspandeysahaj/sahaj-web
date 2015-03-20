@@ -26,6 +26,12 @@ $( document ).ready(function() {
 
     });
 
-  });
+    $('.menu').affix({
+        offset: {
+                top: $('#header').height()
+        }
+    });
+
+});
 
 

@@ -25,9 +25,12 @@ body{
       font-weight: 300;
       color: white;
 }
+#menu{
+        height: 80px;
+}
 .menu{
       background-color: #164F86;
-      height: 80px;
+      top: 0px;
 }
 .menu img{
       margin-top: 15px;
