@@ -13,7 +13,10 @@
     <script src="js/plugins/jquery-1.11.1.js"></script>
     <script src="js/plugins/jquery.bxslider.js"></script>
     <script src="js/plugins/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="js/custom/feed_data.js"></script>
     <script src="js/custom/custom.js"></script>
+    <script src="js/custom/blog.js"></script>
 </head>
 <body>
     <section name="header" id="header">
@@ -22,7 +25,7 @@
                 <li>
                     <img src="images/Slide_1_edit.png" />
                     <div class ="headerText">
-                        <p>If solution aren't simple, then it only means that we haven't understood the problem well enough.</p>
+                        <p>If solutions aren't simple, then it only means that we haven't understood the problem well enough.</p>
                     </div>
                 </li>
                 <li><img src="images/Slide_1_edit.png" /></li>
@@ -209,66 +212,23 @@
             <div class = "wave">
                 <img src="images/WaveBG1920.png">
             </div>
-            <div class="blue-box">
+            <div class="blue-box" id="blog-summary">
                 <div class = "section-header">
                     <p>BLOGS</p>
                     <div class ="section-bar"> </div>
                 </div>
                 <div class = "space">
                 </div>
-                <div class = "col-lg-6 col-md-6 col-sm-6">
-                    <img src="images/aman.jpg" class="img-circle pull-left" alt="Circular Image">
+            <div class = "col-lg-6 col-md-6 col-sm-6 hidden" id="blog-summary-template">
+                    <img class="img-circle pull-left" alt="Circular Image">
                     <div class="blog-text">
-                        <h4>Nitin Dhall March 3, 2015 12 Comments</h4>
-                        <h4>AS we walk through our first year</h4>
-                        <p>
-                            The word Sahaj has its origins in the Sanskrit language and it represents simplicity.
-                            Our endeavour is to deliver outcomes which embrace aspects of simplicity represented by elegance,
-                            clarity and sophistication. We believe that this cannot happen without a strong commitment to
-                            understanding our customer's problems, a solution mindset and a commitment towards engineering excellence.
-                        </p>
-                    </div>
-                </div>
-                <div class = "col-lg-6 col-md-6 col-sm-6">
-                    <img src="images/varun.jpg" class="img-circle pull-left" alt="Circular Image">
-                    <div class="blog-text">
-                        <h4>Nitin Dhall March 3, 2015 12 Comments</h4>
-                        <h4>AS we walk through our first year</h4>
-                        <p>
-                            The word Sahaj has its origins in the Sanskrit language and it represents simplicity.
-                            Our endeavour is to deliver outcomes which embrace aspects of simplicity represented by elegance,
-                            clarity and sophistication. We believe that this cannot happen without a strong commitment to
-                            understanding our customer's problems, a solution mindset and a commitment towards engineering excellence.
-                        </p>
-                    </div>
-                </div>
-                <div class = "col-lg-6 col-md-6 col-sm-6">
-                    <img src="images/vikas.jpg" class="img-circle pull-left" alt="Circular Image">
-                    <div class="blog-text">
-                        <h4>Nitin Dhall March 3, 2015 12 Comments</h4>
-                        <h4>AS we walk through our first year</h4>
-                        <p>
-                            The word Sahaj has its origins in the Sanskrit language and it represents simplicity.
-                            Our endeavour is to deliver outcomes which embrace aspects of simplicity represented by elegance,
-                            clarity and sophistication. We believe that this cannot happen without a strong commitment to
-                            understanding our customer's problems, a solution mindset and a commitment towards engineering excellence.
-                        </p>
-                    </div>
-                </div>
-                <div class = "col-lg-6 col-md-6 col-sm-6">
-                    <img src="images/raja.jpg" class="img-circle pull-left" alt="Circular Image">
-                    <div class="blog-text">
-                        <h4>Nitin Dhall March 3, 2015 12 Comments</h4>
-                        <h4>As we walk through our first year</h4>
-                        <p>
-                            The word Sahaj has its origins in the Sanskrit language and it represents simplicity.
-                            Our endeavour is to deliver outcomes which embrace aspects of simplicity represented by elegance,
-                            clarity and sophistication. We believe that this cannot happen without a strong commitment to
-                            understanding our customer's problems, a solution mindset and a commitment towards engineering excellence.
-                        </p>
+                        <h4 class="author">Author</h4>
+                        <a class="title" target="_blank">Title</a>
+                        <p class="content-snippet"></p>
                     </div>
                 </div>
             </div>
+            <a href="#" class="center-block blue-box"><h5>VIEW ALL OUR BLOGS</h5></a>
         </div>
     </section>
     <section name="contact">
