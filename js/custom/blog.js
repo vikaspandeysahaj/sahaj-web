@@ -22,7 +22,7 @@ $(document).ready(function () {
                     blog_summary.appendTo('#blog')
                 }
             });
-            return index < 3;
+            return index < 5;
         })
     }
 

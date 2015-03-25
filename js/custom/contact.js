@@ -22,6 +22,8 @@ $(document).ready(function () {
 
     $('#chennai-selector').click(function () {
         $('.office-contact').addClass('hidden');
+        $('.contact-city').removeClass('chosen-city');
+        $('#chennai-selector').addClass('chosen-city');
         $('#chennai-contact').removeClass('hidden');
         var center = chennai_map.getCenter();
         google.maps.event.trigger(chennai_map, 'resize');
@@ -30,6 +32,8 @@ $(document).ready(function () {
 
     $('#bangalore-selector').click(function () {
         $('.office-contact').addClass('hidden');
+        $('.contact-city').removeClass('chosen-city');
+        $('#bangalore-selector').addClass('chosen-city');
         $('#bangalore-contact').removeClass('hidden');
         var center = bangalore_map.getCenter();
         google.maps.event.trigger(bangalore_map, 'resize');

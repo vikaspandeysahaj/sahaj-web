@@ -196,3 +196,9 @@ html {
 .blog-summary-box{
     height: 200px;
 }
+.contact-city{
+    font-weight: normal;
+}
+.chosen-city{
+    background: rgb(231, 195, 195);
+}
