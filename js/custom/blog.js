@@ -19,7 +19,7 @@ $(document).ready(function () {
                     blog_summary.find('.title').attr('href',entry.link);
                     blog_summary.find('.content-snippet').text(entry.contentSnippet);
 
-                    blog_summary.appendTo('#blog-summary')
+                    blog_summary.appendTo('#blog')
                 }
             });
             return index < 3;

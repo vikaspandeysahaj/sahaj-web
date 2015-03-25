@@ -5,8 +5,13 @@ body{
    font-weight: 100;
    color: black;
 }
-.header{
-
+.header img{
+    /*background-size: 100% auto;*/
+    max-width: 100%;
+    max-height: 100%;
+}
+html {
+    height: 100%
 }
 .headerText{
  color: white;
@@ -24,6 +29,7 @@ body{
       font-size: 42px;
       font-weight: 300;
       color: white;
+      font-family: 'Lato', sans-serif;
 }
 #menu{
         height: 80px;
@@ -124,7 +130,7 @@ body{
 .product-back{
     margin-top:40px;
     background-size:100% auto;
-    background: url("../images/SamvidBG.png") no-repeat;
+    background: url("../images/SamvidBG1920Drk2.jpg") no-repeat;
     text-align:center;
 }
 .product-back p{
@@ -175,6 +181,18 @@ body{
     margin-left: 40px;
     margin-right: 40px;
 }
-.footer{
-    margin-top: 30px;
+.footer img{
+    height: 70px;
+    margin-top: 40px;
+}
+.white-font{
+    color: #ffffff;
+}
+.career-text{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.blog-summary-box{
+    height: 200px;
 }
