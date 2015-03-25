@@ -79,7 +79,7 @@ html {
 .thumb img{
     width: 200px;
     max-width: 100%;
-    height: auto;
+    height: 200px;
     margin-top: 45px;
     margin-bottom: 15px;
     border: 3px solid rgb(229, 229, 229);

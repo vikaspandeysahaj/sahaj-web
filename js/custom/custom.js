@@ -1,6 +1,10 @@
-//$(window).load(function () {
 $(document).ready(function () {
-    $('.bxslider').bxSlider();
+    $('.bxslider').bxSlider({
+        auto: true,
+        autoControls: true,
+        pause: 8000,
+        pager: false
+    });
 
     $("#btnProduct").click(function () {
         $('html, body').animate({
