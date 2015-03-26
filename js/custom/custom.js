@@ -1,58 +1,25 @@
 $(document).ready(function () {
     $('.bxslider').bxSlider({
-        auto: true,
-        autoControls: true,
-        pause: 8000,
-        pager: false
+        pager: false,
+        controls: true
     });
 
-    $("#btnProduct").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#product").offset().top - $('#menu').height()
-        }, 500);
+    function registerScrollLocation(buttonId, destinationId){
+        $("#"+buttonId).click(function () {
+            $('html, body').animate({
+                scrollTop: $("#"+destinationId).offset().top - $('#menu').height()
+            }, 500);
 
-    });
+        });
+    }
 
-    $("#btnService").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#service").offset().top - $('#menu').height()
-        }, 500);
-
-    });
-
-    $("#btnTeam").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#team").offset().top - $('#menu').height()
-        }, 500);
-
-    });
-
-    $("#btnCareer").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#career").offset().top - $('#menu').height()
-        }, 500);
-
-    });
-
-    $("#btnAbout").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#about").offset().top - $('#menu').height()
-        }, 500);
-
-    });
-
-    $("#btnBlogs").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#blog").offset().top - $('#menu').height()
-        }, 500);
-
-    });
-
-    $("#btnContact").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#contact").offset().top - $('#menu').height()
-        }, 500);
-    });
+    registerScrollLocation('product-btn', 'product');
+    registerScrollLocation('service-btn', 'service');
+    registerScrollLocation('team-btn', 'team');
+    registerScrollLocation('career-btn', 'career');
+    registerScrollLocation('about-btn', 'about');
+    registerScrollLocation('blogs-btn', 'blog');
+    registerScrollLocation('contact-btn', 'contact');
 
     $('.menu').affix({
         offset: {
