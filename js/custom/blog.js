@@ -15,14 +15,17 @@ $(document).ready(function () {
                     blog_summary.removeClass('hidden');
                     blog_summary.find('img').attr('src',data.image_url);
                     blog_summary.find('.author').text(data.author);
+                    var date = new Date(entry.publishedDate);
+                    date = date.toDateString().substr(4);
+                    blog_summary.find('.published-date').text(date);
                     blog_summary.find('.title').text(entry.title);
                     blog_summary.find('.title').attr('href',entry.link);
                     blog_summary.find('.content-snippet').text(entry.contentSnippet);
 
-                    blog_summary.appendTo('#blog')
+                    blog_summary.appendTo('#blog-content')
                 }
             });
-            return index < 5;
+            return index < 3;
         })
     }
 

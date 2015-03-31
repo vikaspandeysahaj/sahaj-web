@@ -1,4 +1,5 @@
 $(document).ready(function () {
+//$(window).load(function () {
     $('.bxslider').bxSlider({
         pager: false,
         controls: true
@@ -20,10 +21,13 @@ $(document).ready(function () {
     registerScrollLocation('about-btn', 'about');
     registerScrollLocation('blogs-btn', 'blog');
     registerScrollLocation('contact-btn', 'contact');
+    registerScrollLocation('home-btn', 'header');
 
+    //console.log($('#header').height());
     $('.menu').affix({
         offset: {
             top: $('#header').height()
+            //top: 619
         }
     });
 
