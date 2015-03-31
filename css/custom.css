@@ -228,11 +228,11 @@ html {
     text-align: center;
     background-color: rgba(22,79,134,0.6);
 }
-.career-header div{
+.career-header .section-bar{
     position: absolute;
     top: 12%;
-    left: 46%;
-    width: 10%;
+    left: 48%;
+    width: 5%;
 }
 .career p{
     margin-top: 1px;
@@ -287,6 +287,26 @@ html {
     padding-top: 15px;
 }
 .bot-nav{
-    width: 10%;
+    width: 11%;
     margin: 0 auto;
+}
+footer a{
+    color: #000000;
+}
+.footer-line{
+    height: 2px;
+    background-color: black;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.footer-content{
+    background-color: white;
+    position: relative;
+    top: -2.9em;
+}
+.footer-content p{
+    font-size: xx-small;
 }
