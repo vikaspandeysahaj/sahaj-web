@@ -120,9 +120,14 @@ html {
       padding-right:60px;
       font-weight: 200;
       color: rgb(90, 87, 87);
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
 }
 .tagLine h5{
     color:#0F7FB1;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    padding-bottom: 30px;
 }
 .product-back{
     background-size:100% auto;
