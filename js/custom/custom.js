@@ -23,11 +23,9 @@ $(document).ready(function () {
     registerScrollLocation('contact-btn', 'contact');
     registerScrollLocation('home-btn', 'header');
 
-    //console.log($('#header').height());
     $('.menu').affix({
         offset: {
             top: $('#header').height()
-            //top: 619
         }
     });
 
